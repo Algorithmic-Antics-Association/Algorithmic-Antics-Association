@@ -1,86 +1,109 @@
-"use client";
 import Image from 'next/image';
 import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
   FaGithubAlt,
+  FaBriefcase,
+  FaMinus,
 } from "react-icons/fa";
-    
-export default function Home() {
 
-  const links = [
-{
+export default function Home() {
+  const axelLinks = [
+    {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/",
+      url: "https://www.linkedin.com/in/axel-morillion/",
       icon: <FaLinkedinIn />,
       target: "_blank",
     },
     {
       name: "GitHub",
-      url: "https://github.com/nermalcat69",
+      url: "https://github.com/AxelMGit",
       icon: <FaGithubAlt />,
       target: "_blank",
-    },
+    }
+  ];
+
+  const erwanLinks = [
     {
       name: "Twitter",
-      url: "https://twitter.com/JsAditya",
-      icon: <FaTwitter />,
+      url: "https://ci3l.github.io/",
+      icon: <FaBriefcase />,
       target: "_blank",
     },
     {
-      name: "Instagram",
-      url: "http://instagram.com/arjun.t17/",
-      icon: <FaInstagram />,
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/erwan-poir%C3%A9/",
+      icon: <FaLinkedinIn />,
+      target: "_blank",
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/Ci3l",
+      icon: <FaGithubAlt />,
       target: "_blank",
     },
   ];
 
   return (
-    <main className=" pb-2 max-w-4xl mx-auto">
-      <div class="flex flex-col mx-auto p-10 text-center">
-        <span className='text-4xl text-orange-500'>⌘</span>
-        <h1 className='font-bold pt-3 text-xl sm:text-4xl md:text-5xl'>Arjun Aditya</h1>
-        <h2 className='text-slate-500 pt-2 font-medium text-md md:text-lg'>Full Stack Engineer</h2>
-         <div className="mt-6 sm:mt-8 flex justify-center  gap-2">
-        {links.map((link, index) => (
-          <a
-            key={index}
-            href={link.url}
-            target={link.target}
-            className="h-14 w-14 sm:h-16 sm:w-16 lg:h-20 lg:w-20 text-slate-500 bg-white shadow-sm hover:text-red-500 text-2xl sm:text-3xl rounded-xl flex items-center justify-center border border-slate-200 hover:shadow-md duration-200"
-          >
-            {link.icon}
-          </a>
-        ))}
-        </div> 
-          <span className="mt-12 mx-auto bg-white hover border-slate-200 p-4  font-medium text-sm md:text-lg max-w-xl text-gray-600 text-center rounded-xl shadow-sm hover:shadow-md duration-200">Hey 🫡, I'm Nermal, I'm a MERN Stack Programmer / Financial Market Trader 🤌</span>
-        <div className='mt-8 md:mt-14'>
-          <h2 className='text-md sm:text-2xl md:text-3xl lg:text-4xl font-semibold'> Join My <span className='text-white bg-orange-500 hover:bg-orange-600 duration-100 cursor-pointer p-1'>Discord</span> Server </h2>
-          <div className='mx-auto max-w-md p-3 mt-6 md:mt-10 justify-center bg-white shadow-sm hover:shadow-md duration-200 rounded-xl '>
-            <div className='flex items-center'>
-              <span className='flex items-center'>
-              <Image className='rounded-full'
-                width="50"
-                height="50"
-                  src="/command.png"
-                  alt="Command Discord Server"
-                  draggable={false} 
-              />
-              <h3 className=' pl-2 text-xs sm:text-2xl lg:text-3xl self-center font-semibold  '>Command</h3>
-              </span>
-            <span className='flex flex-grow justify-end self-center '><a className=' bg-black hover:bg-gray-800 duration-100 py-2 px-2 sm:px-8 text-xs sm:text-2xl  rounded-3xl font-medium text-white ' target='_blank' href='https://discord.gg/ruFEzFfruX'>Join</a></span>
-            </div>
+    <main className="pb-2 max-w-4xl mx-auto">
+      <div className="text-center p-10">
+        <span className='text-4xl text-orange-500'>Hey !</span>
+        <h1 className='font-bold pt-3 text-xl sm:text-4xl md:text-5xl'>Algorithmic Antics Association</h1>
+        <div className="flex flex-col items-center">
+          <h2 className='text-slate-500 pt-2 font-medium text-md md:text-lg'>Associés en développement, prêts à concrétiser vos idées.       <a href="mailto:poire.erwan2005@gmail.com,axel.morillion@outlook.com" className="text-blue-500 hover:underline">Contactez-nous </a>et passons à l'action !</h2>
+          <span className="mt-2 bg-white hover border-slate-200 p-4  font-medium text-sm md:text-lg max-w-xl text-gray-600 text-center rounded-xl shadow-sm hover:shadow-md duration-200" style={{ textAlign: 'justify' }}>
+          Notre association étudiante se spécialise dans le développement de sites web et d'applications, offrant des solutions sur mesure pour répondre aux besoins de nos clients. <br/><br/>
+          Forts de notre amitié et de notre collaboration de longue date, nous combinons nos compétences variées en CSS, HTML, Python, Java, C++, C, API et GPT-6 pour réaliser des projets de haute qualité. <br/><br/>
+          Notre flexibilité et notre engagement envers la satisfaction client nous permettent de nous adapter rapidement aux exigences changeantes et de garantir des résultats exceptionnels. <br/><br/>
+          En bref, nous sommes une équipe jeune, dynamique et passionnée, prête à concrétiser vos idées et à transformer vos projets en succès.
+        </span>
+
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        <div className="flex flex-col mx-auto p-10 text-center">
+          <span className='text-4xl text-orange-500'>⌘</span>
+          <h1 className='font-bold pt-3 text-xl sm:text-4xl md:text-5xl'>Axel Morillion</h1>
+          <h2 className='text-slate-500 pt-2 font-medium text-md md:text-lg'>Étudiant à l’ESGI (École Supérieure de Génie Informatique)</h2>
+          <div className="mt-6 sm:mt-8 flex justify-center  gap-2">
+            {axelLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target={link.target}
+                className="h-14 w-14 sm:h-16 sm:w-16 lg:h-20 lg:w-20 text-slate-500 bg-white shadow-sm hover:text-red-500 text-2xl sm:text-3xl rounded-xl flex items-center justify-center border border-slate-200 hover:shadow-md duration-200"
+              >
+                {link.icon}
+              </a>
+            ))}
           </div>
         </div>
 
-        <div className='mt-6 max-w-md mx-auto'>
-          <div className='embed-container'>
-          <iframe className='rounded-2xl p-2' 
-             width="100%" height="100%" src="https://open.spotify.com/embed/playlist/7x1Mud6oTcl7TLGHDaRhiY?utm_source=generator&theme=0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div className="flex flex-col mx-auto p-10 text-center">
+          <span className='text-4xl text-orange-500'>⌘</span>
+          <h1 className='font-bold pt-3 text-xl sm:text-4xl md:text-5xl'>Erwan Poiré</h1>
+          <h2 className='text-slate-500 pt-2 font-medium text-md md:text-lg'>L1 MIDO @ Paris Dauphine PSL</h2>
+          <div className="mt-6 sm:mt-8 flex justify-center  gap-2">
+            {erwanLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target={link.target}
+                className="h-14 w-14 sm:h-16 sm:w-16 lg:h-20 lg:w-20 text-slate-500 bg-white shadow-sm hover:text-red-500 text-2xl sm:text-3xl rounded-xl flex items-center justify-center border border-slate-200 hover:shadow-md duration-200"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      <div className="mt-4 text-center">
+      <p className="text-gray-600 font-medium">Vous avez un projet que vous souhaitez concrétiser ? Contactez-nous par e-mail :</p>
+      <a href="mailto:poire.erwan2005@gmail.com,axel.morillion@outlook.com" className="text-blue-500 hover:underline">Envoyer un mail</a>
+      </div>
+
     </main>
   )
 }
