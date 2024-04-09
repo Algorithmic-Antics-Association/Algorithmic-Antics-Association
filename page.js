@@ -381,6 +381,12 @@ __webpack_require__.r(__webpack_exports__);
 function Home() {
     const axelLinks = [
         {
+            name: "Portfolio",
+            url: "https://axelmgit.github.io/",
+            icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__/* .FaBriefcase */ .I8D, {}),
+            target: "_blank"
+        },
+        {
             name: "LinkedIn",
             url: "https://www.linkedin.com/in/axel-morillion/",
             icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__/* .FaLinkedinIn */ .BUd, {}),
@@ -395,7 +401,7 @@ function Home() {
     ];
     const erwanLinks = [
         {
-            name: "Twitter",
+            name: "Portfolio",
             url: "https://ci3l.github.io/",
             icon: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__/* .FaBriefcase */ .I8D, {}),
             target: "_blank"
